@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 800px;
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('pika.jpg');
+  padding: 30px 20px 0px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+p, h3, h2 {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #ffde22;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+.report {
+  width: 60%;
+  border: 6px dashed #aaa;
+  padding: 30px 15px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name {
+
+  margin: 0 auto;
+  color: #ff414e;
+  font-weight: 600;
+  font-size: 3rem;
+  border-bottom: 5px solid #999;
+  font-family: sans-serif;
+}
+
+.result {
+  color: #fff;
+  padding: 10px;
+  background-color: #000;
+  max-width: 800px;
+  margin: auto;
+}
+
+input {
+  height: 60px;
+  width: 500px;
+  margin: 10px auto 0 auto;
+  font-size: 1.8rem;
+  padding: 12px 7px;
+}
+
+input[type = 'submit'] {
+  background-color: #ff8928;
+  max-width: 100px;
+  margin-top: 18px;
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: 5px solid #000;
+}
+
+.title {
+    background-color: #000;
+    color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 4px;
+}
+
+.small {
+    font-size: 1.1rem;
+    color: #ffde22;
+}
+
+@media only screen and (max-width: 800px) {
+  .report {
+    margin-top: 80px;
+    border: none;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-position: 50% 0;
+    background-attachment: fixed;
+  }
+
+  input {
+    max-width: 300px;
+  }
+
+  .result {
+    color: #fff;
+    background-color: #000;
+  }
+}
