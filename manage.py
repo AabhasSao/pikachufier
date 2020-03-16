@@ -14,5 +14,5 @@ def pikachufy():
     return render_template('results.html', name_pikachufied = result,
     the_title = "Results", the_name = name)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 app.run()
